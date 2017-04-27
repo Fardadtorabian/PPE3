@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Dispatcher.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Dispatcher_refValidEmail_EV3Library" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://domy59efficom.eu/WebServiceVerificationEmail.asmx</Value>
+    </Setting>
+    <Setting Name="Dispatcher_refWsSms_WebServiceSms" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://domy59efficom.eu/WebServiceSms.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://domy59efficom.eu/WebServiceVerificationEmail.asmx?wsdl" docRef="https://domy59efficom.eu/WebServiceVerificationEmail.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://domy59efficom.eu/WebServiceVerificationEmail.asmx" xmlns:q1="http://efficom.org/" binding="q1:WebServiceVerificationEmailSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://domy59efficom.eu/WebServiceVerificationEmail.asmx" xmlns:q2="http://efficom.org/" binding="q2:WebServiceVerificationEmailSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

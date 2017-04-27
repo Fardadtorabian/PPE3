@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99D31D48-FC6C-4744-A29C-B59AF61435A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dispatcher</RootNamespace>
+    <AssemblyName>Dispatcher</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Calendar.DayView">
+      <HintPath>..\DllAPI\Calendar.DayView.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core">
+      <HintPath>..\DllAPI\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms">
+      <HintPath>..\DllAPI\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.NETWORKLIST">
+      <HintPath>..\DllAPI\Interop.NETWORKLIST.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="LibraryToastNotification">
+      <HintPath>..\DllAPI\LibraryToastNotification.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DllAPI\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.Calendar">
+      <HintPath>..\DllAPI\System.Windows.Forms.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjouterPrestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterPrestForm.Designer.cs">
+      <DependentUpon>AjouterPrestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoiteAOutils\AccesWebServices.cs" />
+    <Compile Include="BoiteAOutils\ChargementListes.cs" />
+    <Compile Include="BoiteAOutils\UseGoogleApiDistance.cs" />
+    <Compile Include="Client\AjouterClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\AjouterClientForm.Designer.cs">
+      <DependentUpon>AjouterClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DispatcherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DispatcherForm.Designer.cs">
+      <DependentUpon>DispatcherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DispatcherForm.Menu.cs">
+      <DependentUpon>DispatcherForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DispatcherForm.Maps.cs">
+      <DependentUpon>DispatcherForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Materiel\AjouterMaterielForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Materiel\AjouterMaterielForm.Designer.cs">
+      <DependentUpon>AjouterMaterielForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Materiel\AffecterMaterielForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Materiel\AffecterMaterielForm.Designer.cs">
+      <DependentUpon>AffecterMaterielForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Materiel\ModifierSupprimerMaterielForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Materiel\ModifierSupprimerMaterielForm.Designer.cs">
+      <DependentUpon>ModifierSupprimerMaterielForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\AjouterInterventionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planning\AjouterInterventionForm.Designer.cs">
+      <DependentUpon>AjouterInterventionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\ApercuInterventionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planning\ApercuInterventionForm.Designer.cs">
+      <DependentUpon>ApercuInterventionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\ModifierInterventionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planning\ModifierInterventionForm.Designer.cs">
+      <DependentUpon>ModifierInterventionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planning\SupprimerInterventionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planning\SupprimerInterventionForm.Designer.cs">
+      <DependentUpon>SupprimerInterventionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sms\EnvoiSMSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sms\EnvoiSMSForm.Designer.cs">
+      <DependentUpon>EnvoiSMSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technicien\AjouterTechnicienForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technicien\AjouterTechnicienForm.Designer.cs">
+      <DependentUpon>AjouterTechnicienForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technicien\ModifierSupprimerTechnicienForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technicien\ModifierSupprimerTechnicienForm.Designer.cs">
+      <DependentUpon>ModifierSupprimerTechnicienForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoiteAOutils\EmployeConnecte.cs" />
+    <Compile Include="BoiteAOutils\InfoActiveDirectory.cs" />
+    <Compile Include="BoiteAOutils\MessageToast.cs" />
+    <Compile Include="BoiteAOutils\Utils.cs" />
+    <Compile Include="Client\ModifierSupprimerClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\ModifierSupprimerClientForm.Designer.cs">
+      <DependentUpon>ModifierSupprimerClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BoiteAOutils\ValidEmail.cs" />
+    <Compile Include="Web References\refValidEmail\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\refWsSms\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AjouterPrestForm.resx">
+      <DependentUpon>AjouterPrestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\AjouterClientForm.resx">
+      <DependentUpon>AjouterClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DispatcherForm.resx">
+      <DependentUpon>DispatcherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\ModifierSupprimerClientForm.resx">
+      <DependentUpon>ModifierSupprimerClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materiel\AffecterMaterielForm.resx">
+      <DependentUpon>AffecterMaterielForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materiel\ModifierSupprimerMaterielForm.resx">
+      <DependentUpon>ModifierSupprimerMaterielForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planning\ApercuInterventionForm.resx">
+      <DependentUpon>ApercuInterventionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\refValidEmail\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\refValidEmail\WebServiceVerificationEmail.wsdl" />
+    <None Include="Web References\refWsSms\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\refWsSms\WebServiceSms.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DaoLib\LibDao.csproj">
+      <Project>{f6c1caf2-1b93-4ec5-bc0f-6905ba0b3710}</Project>
+      <Name>LibDao</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://domy59efficom.eu/WebServiceSms.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\refWsSms\</RelPath>
+      <UpdateFromURL>https://domy59efficom.eu/WebServiceSms.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Dispatcher_refWsSms_WebServiceSms</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://domy59efficom.eu/WebServiceVerificationEmail.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\refValidEmail\</RelPath>
+      <UpdateFromURL>https://domy59efficom.eu/WebServiceVerificationEmail.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Dispatcher_refValidEmail_EV3Library</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\refValidEmail\WebServiceVerificationEmail.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\refWsSms\WebServiceSms.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

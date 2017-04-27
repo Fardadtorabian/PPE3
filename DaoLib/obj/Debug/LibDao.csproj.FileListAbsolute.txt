@@ -1,0 +1,5 @@
+C:\Users\aftorabian\Desktop\SlnDomy59PPE4\DaoLib\bin\Debug\DaoLib.dll
+C:\Users\aftorabian\Desktop\SlnDomy59PPE4\DaoLib\bin\Debug\DaoLib.pdb
+C:\Users\aftorabian\Desktop\SlnDomy59PPE4\DaoLib\obj\Debug\LibDao.csprojResolveAssemblyReference.cache
+C:\Users\aftorabian\Desktop\SlnDomy59PPE4\DaoLib\obj\Debug\DaoLib.dll
+C:\Users\aftorabian\Desktop\SlnDomy59PPE4\DaoLib\obj\Debug\DaoLib.pdb

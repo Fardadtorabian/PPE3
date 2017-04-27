@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibDao", "DaoLib\LibDao.csproj", "{F6C1CAF2-1B93-4EC5-BC0F-6905BA0B3710}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeuplerTables", "PeuplerTables\PeuplerTables.csproj", "{88C9CA50-0AF5-4E73-BD4C-B3C04B6DCC42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dispatcher", "Dispatcher\Dispatcher.csproj", "{99D31D48-FC6C-4744-A29C-B59AF61435A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6C1CAF2-1B93-4EC5-BC0F-6905BA0B3710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C1CAF2-1B93-4EC5-BC0F-6905BA0B3710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C1CAF2-1B93-4EC5-BC0F-6905BA0B3710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C1CAF2-1B93-4EC5-BC0F-6905BA0B3710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88C9CA50-0AF5-4E73-BD4C-B3C04B6DCC42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88C9CA50-0AF5-4E73-BD4C-B3C04B6DCC42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88C9CA50-0AF5-4E73-BD4C-B3C04B6DCC42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88C9CA50-0AF5-4E73-BD4C-B3C04B6DCC42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99D31D48-FC6C-4744-A29C-B59AF61435A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D31D48-FC6C-4744-A29C-B59AF61435A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D31D48-FC6C-4744-A29C-B59AF61435A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D31D48-FC6C-4744-A29C-B59AF61435A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

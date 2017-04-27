@@ -1,0 +1,11 @@
+Version 4.0
+Cette version reprend la version 3.4 du PPE3
+Modification classe peuplement
+modification script sql suite à la découverte de l'oubli d'insertion de la cle étrnagère dans la table technicien
+modification des fichiers de peuplement
+modification du technicien manager (ajoutModifTechnicien)
+//*****************************************************************************************************************
+Version 4.1
+Modifications faites pour que l'application fonctionne via une authentification sur un controleur de domaine.
+Modification des chaines de connexion à la BDD
+Quelles corrections mineures mais nécessaire

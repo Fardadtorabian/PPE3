@@ -1,0 +1,11 @@
+#;liste des données pour peupler la table Intervention
+#;CompteRendu,nbrJourAprèsAujourdui,debutIntervention,finIntervention,objetVisite,Photolieu,
+#;NomContact,prenomContact,telContact,EtatVisite,FkloginE,FkIdClient,FkloginT
+;0;3;4;Installation nouvelle ligne telephonique;..\\..\\..\\PhotosIntervention\\electriciteparticuliers.jpg;Barre;Laurent;8522369685;planifiée;dnmylle;2;tlbettini
+;0;8;9;Coupure dans armoire éléctrique;..\\..\\..\\PhotosIntervention\\armoireElecrique.jpg;Dabloc;Elmer;85296341;planifiée;dnmylle;6;tftorabian
+;2;8;9;Coupure fibre internet;..\\..\\..\\PhotosIntervention\\photo-012.jpg;Oposte;Fidel;05296341;planifiée;dnmylle;6;tftorabian
+;0;0;1;Changement Box Internet;..\\..\\..\\PhotosIntervention\\internetBox.jpg;Perret;Inès;7412589636;planifiée;rlasire;4;tvsilvestre
+;0;1;3;Changement telephone IP et paramétrages;..\\..\\..\\PhotosIntervention\\GXV3140-9.jpg;Turacrosh;Théophile;0621346589;planifiée;dvsilvestre;1;tvsilvestre
+;0;3;4;Ajout additif temporisation;..\\..\\..\\PhotosIntervention\\artisanelectricien.jpg;Coptaire;Elie;0621346589;planifiée;dvsilvestre;5;tvsilvestre
+;0;6;9;Changement moteur électrique;..\\..\\..\\PhotosIntervention\\MOTEURELECTRIQUE.jpg;Gaize;Elmer;0722369685;planifiée;dnmylle;2;tvsilvestre
+;0;9;10;Changement relais commande chauffage;..\\..\\..\\PhotosIntervention\\pict0010.jpg;Tassion;Félicie;0612589636;planifiée;rlasire;4;tvsilvestre
